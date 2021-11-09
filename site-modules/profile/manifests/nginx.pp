@@ -3,6 +3,7 @@
 #
 class profile::nginx () {
   class { 'nginx':
-    www_root => '/opt/html/',
+    manage_repo    => true,
+    package_source => 'nginx-mainline'
   }
 }
