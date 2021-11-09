@@ -28,4 +28,10 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
+  if $trusted['extensions']['pp_role'] {
+    include "role::${trusted['extensions']['pp_role']}"
+  }
+  else {
+    # when false
+  }
 }
