@@ -1,2 +1,2 @@
 ---
-message: "This node is using common data"
+profile::base::hiera_message: This message comes from common.yaml

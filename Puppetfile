@@ -15,3 +15,7 @@ forge 'https://forge.puppet.com'
 #mod 'apache',
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  branch: 'docs_experiment'
+
+mod 'puppetlabs-inifile', '5.2.0'
+mod 'puppetlabs-stdlib',  '8.1.0'
+mod 'puppetlabs-concat',  '7.1.1'
