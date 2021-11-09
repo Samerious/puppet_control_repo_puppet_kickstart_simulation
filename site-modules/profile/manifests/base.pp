@@ -7,4 +7,5 @@ class profile::base (
     '20.04': { include profile::focal_2004 }
     default: { fail("The Ubuntu version ${facts['os']['release']['full']} ") }
   }
+  include ntp
 }
