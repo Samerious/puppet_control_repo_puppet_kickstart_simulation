@@ -8,4 +8,7 @@ class profile::base (
     default: { fail("The Ubuntu version ${facts['os']['release']['full']} ") }
   }
   include ntp
+  class {'puppet_agent':
+    package_version => 'auto',
+  }
 }

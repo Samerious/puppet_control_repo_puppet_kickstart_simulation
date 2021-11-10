@@ -3,5 +3,5 @@
 #
 #
 class profile::bionic_1804 {
-  notify { $profile::base::hiera_message: }
+
 }
