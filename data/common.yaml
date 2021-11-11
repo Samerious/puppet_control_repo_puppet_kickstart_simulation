@@ -1,2 +1,5 @@
 ---
-message: "This node is using common data"
+profile::base::hiera_message: This message comes from common.yaml
+ntp::servers:
+  - ntp1.corp.com
+  - ntp2.corp.com
