@@ -16,6 +16,7 @@ forge 'https://forge.puppet.com'
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  branch: 'docs_experiment'
 
+#Forge modules
 mod 'puppetlabs-inifile',      '5.2.0'
 mod 'puppetlabs-stdlib',       '8.1.0'
 mod 'puppetlabs-concat',       '7.1.1'
@@ -24,3 +25,10 @@ mod 'puppetlabs-ntp',          '9.1.0'
 mod 'puppetlabs-apt',          '8.3.0'
 mod 'puppetlabs-facts',        '1.4.0'
 mod 'puppetlabs-puppet_agent', '4.9.0'
+
+
+
+#Git modules
+mod 'rust_server_puppet_setup',
+  git:    'git@github.com:Samerious/rust_server_puppet_setup.git',
+  :branch => :control_branch
