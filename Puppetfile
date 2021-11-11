@@ -32,4 +32,4 @@ mod 'puppetlabs-puppet_agent', '4.9.0'
 mod 'rust_server_puppet_setup',
   git:    'git@github.com:Samerious/rust_server_puppet_setup.git',
   :branch => :control_branch,
-  :default => 'production'
+  :default_branch => 'production'
