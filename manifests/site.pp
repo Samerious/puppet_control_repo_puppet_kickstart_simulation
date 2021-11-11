@@ -32,6 +32,5 @@ node default {
     include "role::${trusted['extensions']['pp_role']}"
   }
   else {
-    notify { 'This node has no role.': }
   }
 }
