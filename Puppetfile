@@ -26,6 +26,8 @@ mod 'puppetlabs-apt',          '8.3.0'
 mod 'puppetlabs-facts',        '1.4.0'
 mod 'puppetlabs-puppet_agent', '4.9.0'
 mod 'puppetlabs-cd4pe_jobs',   '1.5.0'
+mod 'puppetlabs-docker', '4.1.2'
+mod 'puppetlabs-reboot', '4.1.0'
 
 
 
