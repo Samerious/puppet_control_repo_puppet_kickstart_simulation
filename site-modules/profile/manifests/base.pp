@@ -12,6 +12,10 @@ class profile::base (
     package_version => 'auto',
   }
   class { 'motd':
-    content => "Hello world!\n"
+    content => 'Greyson and Geoffrey were here'
+  }
+  file { '/home/ubuntu/taco.txt':
+    ensure  => file,
+    content => 'Beef, Lettuce, Sour Cream',
   }
 }
