@@ -11,7 +11,6 @@ class profile::base (
   class {'puppet_agent':
     package_version => 'auto',
   }
-  include motd
   class { 'motd':
     content => "Hello world!\n"
   }
