@@ -1,4 +1,5 @@
 #the base profile should include component modules that will be on all nodes
+#I am adding a comment here
 class profile::base (
   String $hiera_message,
 ) {
