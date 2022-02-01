@@ -31,6 +31,7 @@ mod 'puppetlabs-powershell', '5.0.0'
 mod 'puppetlabs-pwshlib', '0.10.1'
 mod 'puppetlabs-reboot', '4.1.0'
 mod 'puppetlabs-motd', '6.1.0'
+mod 'puppetlabs-registry', '4.0.1'
 
 
 
