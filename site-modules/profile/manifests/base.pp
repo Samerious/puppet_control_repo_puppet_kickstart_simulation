@@ -20,6 +20,6 @@ class profile::base (
     ensure  => file,
     content => "Beef, Lettuce, Sour Cream ${secret}",
   }
-  notify { $secret:
+  notify { "This is my secret ${secret}":
   }
 }
