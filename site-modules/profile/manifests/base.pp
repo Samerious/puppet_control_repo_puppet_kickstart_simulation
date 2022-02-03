@@ -22,5 +22,5 @@ class profile::base (
   }
   notify { "This is my secret ${secret}":
   }
-  redact('secret')
+  redact('secret','BLANK')
 }
