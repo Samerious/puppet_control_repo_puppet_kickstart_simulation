@@ -2,7 +2,8 @@
 #I am adding a comment here
 class profile::base (
   String $hiera_message,
-  Sensitive[String[1]] $secret,
+# Sensitive[String[1]] $secret,
+  String[1] $secret,
 ) {
   case $facts['os']['release']['full'] {
     '18.04': { include profile::bionic_1804 }
@@ -18,8 +19,9 @@ class profile::base (
   }
   file { '/home/ubuntu/taco.txt':
     ensure  => file,
-    content => "Beef, Lettuce, Sour Cream ${secret}",
+    content => "Beef, Lettuce, Sour Cream ${secret}".node_encrypt::secret,
   }
   notify { "This is my secret ${secret}":
   }
+  redact('secret')
 }
