@@ -1,4 +1,8 @@
 ---
+lookup_options:
+  profile::base::secret:
+    convert_to: "Sensitive"
+
 profile::base::secret: >
   ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBAD
   AFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAFKSLeQqjsHDCkkd2J/eUUwPDAW
