@@ -13,7 +13,7 @@ class profile::base (
     package_version => 'auto',
   }
   class { 'motd':
-    content => 'Greyson and Geoffrey were here'
+    content => 'Greyson destroy and recreate'
   }
   file { '/home/ubuntu/taco.txt':
     ensure  => file,
