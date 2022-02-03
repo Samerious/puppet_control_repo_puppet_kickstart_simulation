@@ -21,7 +21,8 @@ class profile::base (
     ensure  => file,
     content => "Beef, Lettuce, Sour Cream ${secret}".node_encrypt::secret,
   }
-  notify { "This is my secret ${secret}":
+  notify { 'nody_notify':
+    message => "This is my secret ${secret}".node_encrypt::secret,
   }
   redact('secret')
 }
