@@ -32,7 +32,7 @@ mod 'puppetlabs-reboot', '4.1.0'
 
 
 #Git modules
-mod 'rust_server_puppet_setup',
-  git:    'git@github.com:Samerious/rust_server_puppet_setup.git',
-  branch: :control_branch,
-  default_branch: 'production'
+#mod 'rust_server_puppet_setup',
+#  git:    'git@github.com:Samerious/rust_server_puppet_setup.git',
+#  branch: :control_branch,
+#  default_branch: 'production'
