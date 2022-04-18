@@ -27,7 +27,15 @@ mod 'puppetlabs-facts',        '1.4.0'
 mod 'puppetlabs-puppet_agent', '4.9.0'
 mod 'puppetlabs-cd4pe_jobs',   '1.5.0'
 mod 'puppetlabs-docker', '4.1.2'
+mod 'puppetlabs-powershell', '5.0.0'
+mod 'puppetlabs-pwshlib', '0.10.1'
 mod 'puppetlabs-reboot', '4.1.0'
+mod 'puppetlabs-motd', '6.1.0'
+mod 'puppetlabs-registry', '4.0.1'
+mod 'binford2k-node_encrypt', '1.0.0'
+mod 'puppetlabs-puppet_authorization', '0.5.1'
+mod 'puppetlabs-hocon', '1.1.0'
+
 
 
 
