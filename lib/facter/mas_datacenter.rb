@@ -1,14 +1,22 @@
-short_host_length = 7
+Facter.add('mas_datacenter') do
 
-if 'SA50791v'.length > short_host_length
+    setcode do
 
-    DATACENTERS = {
-        "54.176" => "CTDC",
-        "203.3"  => "NJDC",
-        "220.3" => "NJDC"
-    }
+        short_host_length = 7
 
-    short_network_ip = '54.176.140.0'.split('.')[0,2].join('.')
+        if Facter.value('hostname').length > short_host_length
 
-    puts DATACENTERS[short_network_ip] 
-end
+            DATACENTERS = {
+                "54.177" => "CTDC",
+                "203.3"  => "NJDC",
+                "220.3" => "NJDC"
+            }
+
+            short_network_ip = Facter.value('network').split('.')[0,2].join('.')
+    
+            DATACENTERS[short_network_ip] 
+        end
+
+    end
+
+  end
